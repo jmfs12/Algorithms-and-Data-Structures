@@ -1,6 +1,6 @@
 public class bsearch {
     public static int search(int[] arr, int l, int r, int n){
-        int m = (l+r)/2;
+        int m = l+(r-l)/2;
 
         if(l <= r){
             if(arr[m] == n){
