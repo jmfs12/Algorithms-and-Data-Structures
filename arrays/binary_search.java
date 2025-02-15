@@ -1,8 +1,8 @@
 public class bsearch {
     public static int search(int[] arr, int l, int r, int n){
+        int m = (l+r)/2;
 
-        while(l <= r){
-            int m = (l+r)/2;
+        if(l <= r){
             if(arr[m] == n){
                 return m;
             }
