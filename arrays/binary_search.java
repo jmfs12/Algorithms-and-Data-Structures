@@ -1,4 +1,4 @@
-public class bsearch {
+public class binary_search {
     public static int search(int[] arr, int l, int r, int n){
         int m = l+(r-l)/2;
 

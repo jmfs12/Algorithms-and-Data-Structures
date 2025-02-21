@@ -1,19 +1,8 @@
-class Solution {
-    public static void Reverse(char[] s, char[] reversed, int l, int r){
-        int e = r;
-        int temp = l;
-        r--;
-        while(r >= temp){
-            reversed[l] = s[r];
-            l++; r--;
-        }
-        reversed[e] = ' ';
-        l = e+1;
-        r = l;
-    }
+class two_pointer {
 
-    public String reverseWords(String s) {
+    public static void main(String[] args) {
         int l = 0,r = 0;
+        String s = "I am a student";
         int len = s.length();
         char[] characters= s.toCharArray();
         char[] reversed = new char[len];
@@ -41,6 +30,6 @@ class Solution {
             l++; r--;
         }
 
-        return new String(reversed);
+        System.out.println(String.valueOf(reversed));
     }
 }
